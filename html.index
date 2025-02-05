@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Valentine</title>
+    <style>
+        body {
+            background-color: #ffcccb;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #ff3366;
+            font-size: 50px;
+            animation: bounce 2s infinite;
+        }
+
+        p {
+            font-size: 24px;
+            color: #d1005f;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            color: #ff3366;
+            animation: float 3s infinite;
+        }
+
+        .cat {
+            position: absolute;
+            font-size: 50px;
+            color: #333;
+            animation: float 4s infinite;
+        }
+
+        /* Animation cho trái tim và mèo */
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-100px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Vị trí random cho các trái tim và mèo */
+        .heart:nth-child(odd) {
+            animation-duration: 4s;
+        }
+        .heart:nth-child(even) {
+            animation-duration: 5s;
+        }
+
+        .cat:nth-child(odd) {
+            animation-duration: 6s;
+        }
+        .cat:nth-child(even) {
+            animation-duration: 7s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chúc Mừng Ngày Valentine!</h1>
+    <p>Chúc bạn một ngày ngọt ngào, đầy yêu thương!</p>
+
+    <!-- Trái tim -->
+    <div class="heart" style="top: 50px; left: 100px;">❤️</div>
+    <div class="heart" style="top: 100px; left: 200px;">❤️</div>
+    <div class="heart" style="top: 150px; left: 300px;">❤️</div>
+    <div class="heart" style="top: 200px; left: 400px;">❤️</div>
+    <div class="heart" style="top: 300px; left: 500px;">❤️</div>
+
+    <!-- Mèo -->
+    <div class="cat" style="top: 200px; left: 600px;">😻</div>
+    <div class="cat" style="top: 350px; left: 700px;">😺</div>
+    <div class="cat" style="top: 450px; left: 800px;">😸</div>
+    <div class="cat" style="top: 100px; left: 900px;">😽</div>
+
+    <!-- Lời chúc -->
+    <p style="font-size: 30px; color: #d1005f; font-weight: bold;">Bạn là người đặc biệt nhất trong trái tim tôi!</p>
+</body>
+</html>
